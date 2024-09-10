@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(buscar.css);
+@import url(index.css);
+@import url(register.css);
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --primario: #0D1117;
+    --secundario: #080017;
+    --terciario: #311D31;
+    --cuaternario: #C8A2C8;
+    --parrafos: 18px;
+    --subtitulos: 24px;
+    --titulos: 36px;
+    --fuente: "Work Sans", sans-serif;
+    --padding: 8px;
+    --margin: 10px;
+    --border-radius: 10px;
+    --border: solid 1px #959595a8;
+    --transition: 1s;
+  }
+
+body {
+    background-color: var(--primario);
+    font-family: var(--fuente);
+}
+
+.title {
+    color: #ffff;
+    font-family: "Work Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600
+}
+
+.title_span {
+    color: var(--cuaternario);
+    font-size: var(--titulos);
+    font-weight: 600;
+    margin-left: 5px
+}
+
+.separator {
+    width: 2px; 
+    height: 45px; 
+    background-color: #727272; 
+    margin: 0 10px; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    margin: 0px 10px 0px 30px;
+}
+
+.parrafos{
+    font-family: var(--fuente);
+    font-size: var(--parrafos);
+    font-weight: normal;
+    color: #fff;
+}
+
+.subtitulos{
+    color: white;
+    font-family: var(--fuente);
+    font-size: var(--subtitulos);
+    font-weight: 600 
+}
+
+.navbar {
+    background-color: var(--secundario);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding);
+}
+
+.search-bar input {
+    font-family: var(--fuente);
+    font-size: var(--parrafos);
+    font-weight: 500;
+    color: white;
+    background-color: #3F3F3F;
+    padding: var(--padding);
+    width: 40rem;
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+.search-bar input::placeholder {
+    color: white;
+}
+
+.btn_registro, .btn_login{
+    font-family: var(--fuente);
+    font-size: var(--parrafos);
+    font-weight: 600;
+    background-color: var(--terciario);
+    color: white;
+    border: var(--border);
+    padding: var(--padding);
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    margin-right: 15px;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-btns{
+    color: white;
+    margin-right: 20px;
+}
+
+.nav-btns button:hover {
+    background-color: #523152;
+    color: #fff;
+    border: solid 3px #4d4c4c;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav-btns button:active {
+    background-color: #633D63;
+    color: #fff;
+    border: solid 3px #a1a1a1;
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+

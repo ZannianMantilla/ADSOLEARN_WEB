@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSOLEARN | Registro Contratista</title>$
+    <link rel="stylesheet" href="/estilos/styles.css">
+    <link rel="icon" href="/estilos/iconos/senalogo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+<div>
+    <img class="background" src="/estilos/img/purplebackground.jpg" alt="alt"/>
+</div>
+<div class="register_container_body">
+
+    <!-- Form -->
+
+    <form class="form_register" novalidate>
+        <p class="title_register">Registro Contratista </p>
+        <div class="flex">
+            <label>
+                <input id="nombre_form" class="input" type="text" placeholder="" required="" name="nombre" autocomplete="off">
+                <span>Nombre</span>
+            </label>
+
+            <label>
+                <input id="apellido_form" class="input" type="text" placeholder="" required="" name="apellido" autocomplete="off">
+                <span>Apellidos</span>
+            </label>
+        </div>
+
+        <label>
+            <input id="correo_general" class="input" type="email" placeholder="" required="" name="correo_general" autocomplete="off">
+            <span>Correo</span>
+        </label>
+
+        <label>
+            <input id="password_form" class="input" type="password" placeholder="" required="" name="password" autocomplete="off">
+            <span>Contraseña</span>
+        </label>
+
+        <label>
+            <input id="telefono_form" class="input" type="tel" placeholder="" required="" name="telefono" autocomplete="off">
+            <span>Telefono</span>
+        </label>
+
+        <label>
+            <input id="edad_form" class="input" type="date" placeholder="" required="" name="edad" autocomplete="off">
+            <span>Fecha de nacimiento</span>
+        </label>
+        <button id="crear-btn" class="crear_btn">Crear Cuenta</button>
+        <p class="signin">Ya tienes una cuenta? <a href="IniciarSesion.html">Inicia Sesion</a> </p>
+    </form>
+
+    <!-- Form -->
+
+</div>
+</body>
+<script type="module" src="/script/form.js"></script>
+</html>

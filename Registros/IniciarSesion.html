@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSOLEARN | Iniciar Sesion</title>$
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <link rel="icon" href="../estilos/iconos/senalogo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+<div>
+    <img class="background" src="../estilos/img/purplebackground.jpg" alt="alt"/>
+</div>
+<div class="register_container_body">
+
+    <!-- Form -->
+
+    <form class="form_register" novalidate>
+        <p class="title_register">Iniciar Sesion</p>
+
+        <label>
+            <input id="correo_general" class="input" type="email" placeholder="" required="" name="correo_general" autocomplete="off">
+            <span>Correo Registrado</span>
+        </label>
+
+        <label>
+            <select id="rol_auth" class="input"  placeholder="" required="" name="rol_auth">
+                <option value="">Seleccione...</option>
+                <option value="Aprendiz">Aprendiz</option>
+                <option value="Contratista">Contratista</option>
+            </select>
+            <span>Rol</span>
+        </label>
+        <button id="crear-btn" class="crear_btn">Ingresar</button>
+        <p class="signin">Olvidaste tu contraseña? <a href="recuperarcontra.jsp">Recuperar</a> </p>
+    </form>
+
+    <!-- Form -->
+
+</div>
+</body>
+<script type="module" src="../script/form.js"></script>
+</html>

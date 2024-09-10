@@ -1,0 +1,178 @@
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.role_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card_rol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  border: var(--border);
+  background-color: #6200ea;
+  color: white;
+  font-size: var(--subtitulos);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card_rol:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.register_container_body {
+  font-family: var(--fuente);
+  font-weight: 500;
+  font-size: var(--parrafos);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 1;
+}
+
+.container_registercard {
+  text-align: center;
+  background-color: var(--secundario);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 500px;
+}
+
+.form_register {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: var(--border-radius);
+  position: relative;
+  background-color: var(--secundario);
+  color: white;
+}
+
+.title_register {
+  font-size: var(--titulos);
+  font-family: var(--fuente);
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: var(--margin);
+}
+
+.message,
+.signin {
+  font-size: var(--parrafos);
+  color: white;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline var(--cuaternario);
+}
+
+.signin a {
+  text-decoration: none;
+  color: var(--cuaternario);
+}
+
+.flex {
+  display: flex;
+  width: 400px;
+  gap: 10px;
+}
+
+.flex label:first-child {
+  margin-right: 10px;
+}
+
+.flex label:last-child {
+  margin-left: 10px;
+}
+
+.flex label input {
+  width: calc(50% - 10px);
+}
+
+.form_register label {
+  position: relative;
+}
+
+.form_register label .input {
+  background-color: var(--terciario);
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  border: var(--border);
+
+  border-radius: var(--border-radius);
+}
+
+.form_register label .input + span {
+  color: white;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: var(--parrafos);
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form_register label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: var(--parrafos);
+}
+
+.form_register label .input:focus + span,
+.form_register label .input:valid + span {
+  color: var(--cuaternario);
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.input {
+  font-size: 600;
+  font-size: var(--parrafos);
+  color: white;
+}
+
+.crear_btn {
+  border: none;
+  outline: none;
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  color: white;
+  font-size: var(--parrafos);
+  transform: 0.3s ease;
+  background-color: var(--cuaternario);
+}
+
+.crear_btn:hover {
+  cursor: pointer;
+  background-color: rgb(100, 2, 100);
+  transition: 0.3s ease;
+}
+
